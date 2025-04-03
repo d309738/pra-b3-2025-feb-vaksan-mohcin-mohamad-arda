@@ -95,22 +95,11 @@ textarea {
       Author's custom styles
       ========================================================================== */
 
-<<<<<<< HEAD
-html {
-    font-size: 16px;
-}
-
-.container {
-    /* max-width: 1024px; */
-    /* margin: 0 auto; */
-}
-=======
 html
 {
     font-size: 16px;
 }
 
->>>>>>> d763e781d5027ebca47b466c8d633acb897726d6
 
 .form-group {
     margin: 1rem 0;

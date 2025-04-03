@@ -21,7 +21,10 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 /*
     * Remove text-shadow in selection highlight:
     * https://twitter.com/miketaylr/status/12228805301
@@ -92,6 +95,7 @@ textarea {
       Author's custom styles
       ========================================================================== */
 
+<<<<<<< HEAD
 html {
     font-size: 16px;
 }
@@ -100,6 +104,13 @@ html {
     /* max-width: 1024px; */
     /* margin: 0 auto; */
 }
+=======
+html
+{
+    font-size: 16px;
+}
+
+>>>>>>> d763e781d5027ebca47b466c8d633acb897726d6
 
 .form-group {
     margin: 1rem 0;
@@ -491,5 +502,32 @@ footer .container {
 }
 
 .footer-info a:hover {
-    color: #444;
+  color: #444;
+}
+
+
+/* ===================================header==================== */
+header{
+  background-color: #ffa07a;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  height: 100px;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+header nav a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 20%;
+}
+header nav a:hover{
+  background-color: black;
 }

@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container3">
     <div class="footer-wrapper">
       <div class="footer-socialmedia">
         <a href="https://nl.linkedin.com/school/curioonderwijsgroep/" target="_blank">

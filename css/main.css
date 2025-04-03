@@ -303,11 +303,13 @@ label {
 .workers p {
     color: rgb(0, 87, 209);
     font-size: 25px;
+    text-align: center;
 }
 
 .workers {
     padding-top: 25px;
     display: flex;
+    justify-content: center;
 }
 
 .workers_tekst P {

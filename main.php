@@ -8,9 +8,6 @@
                             <h2>Workers & Co-Workers</h2>
                             <p>Planner</p>
                         </div>
-                        <div class="worker_img">
-                            <img src="../pra-b3-2025-feb-vaksan-mohcin-mohamad-arda/img/logo-big-v4.png" alt="" width="300">
-                        </div>
                     </div>
                 </div>
 

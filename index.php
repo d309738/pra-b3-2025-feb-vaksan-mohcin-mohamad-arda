@@ -7,11 +7,8 @@
 </head>
 
 <body>
-    
-    <div class="container">
+<?php require_once 'main.php'; ?>
 
-
-    </div>
 
 </body>
 

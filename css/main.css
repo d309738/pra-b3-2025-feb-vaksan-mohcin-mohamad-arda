@@ -11,11 +11,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-*
-{
-margin: 0 auto;
-padding: 0;
-}
 
 html {
   color: #222;
@@ -23,7 +18,7 @@ html {
   line-height: 1.4;
 }
 *{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 /*
@@ -497,7 +492,7 @@ padding: 5px;
 
 }
 
-footer .container {
+footer .container3 {
   background-color: #ffa07a;
   width: 100%;
   height: 70px;
@@ -549,7 +544,8 @@ footer .container {
 header{
   background-color: #ffa07a;
 }
-.container{
+.container2{
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 70%;
@@ -568,5 +564,6 @@ header nav a{
   border-radius: 20%;
 }
 header nav a:hover{
+  color: white;
   background-color: black;
 }

@@ -22,7 +22,10 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -93,7 +96,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html{
+html
+{
     font-size: 16px;
 }
 

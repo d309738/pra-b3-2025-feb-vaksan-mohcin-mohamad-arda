@@ -16,7 +16,10 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -286,5 +289,31 @@ label{
   h3 {
     page-break-after: avoid;
   }
+}
+
+header{
+  background-color: #ffa07a;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  height: 100px;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+header nav a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 20%;
+}
+header nav a:hover{
+  background-color: black;
+  color: white;
 }
 

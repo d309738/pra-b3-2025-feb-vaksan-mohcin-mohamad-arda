@@ -13,7 +13,7 @@
 
                 <div class="all_button">
                     <div class="worker_button"><a href="*">Worker</a></div>
-                    <div class="admin_button"><a href="*">Admin</a></div>
+                    <div class="admin_button"><a href="admin/index.php">Admin</a></div>
                 </div>
 
                 <div class="lists">

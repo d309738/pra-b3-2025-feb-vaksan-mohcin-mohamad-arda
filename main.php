@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(!isset($_SESSION['user']))
+{
+    header('location: ../../../../login.php');
+    exit();
+ 
+}
+ 
+?>
+
 <div class="container">
         <main>
 
@@ -22,11 +33,11 @@
                         <h1>TO-DO</h1>
                         <H2>LIST THE PERSON</H2>
                         <div class="p">
-                            <p>lorem</p>
-                            <p>lorem</p>
-                            <p>lorem</p>
-                            <p>lorem</p>
-                            <p>lorem</p>
+                            <p><a href="meldingen/index.php">eerste gebruiker</a></p>
+                            <p><a href="meldingen2/index.php">tweede gebruiker</a></p>
+                            <p><a href="meldingen3/index.php">derde gebruiker</a></p>
+                            <p><a href="meldingen4/index.php">vierde gebruiker</a></p>
+                            <p><a href="meldingen5/index.php">vijfde gebruiker</a></p>
                             <p>lorem</p>
                             <p>lorem</p>
                             <p>lorem</p>

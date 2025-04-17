@@ -21,9 +21,10 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-*{
-  margin: 0 auto;
-  padding: 0;
+
+* {
+    margin: 0 auto;
+    padding: 0;
 }
 /*
     * Remove text-shadow in selection highlight:
@@ -95,11 +96,9 @@ textarea {
       Author's custom styles
       ========================================================================== */
 
-html
-{
+html {
     font-size: 16px;
 }
-
 
 .form-group {
     margin: 1rem 0;
@@ -371,22 +370,10 @@ label {
 }
 
 .todo h1 {
-    text-align: center;
-}
-
-.todo h2 {
     border: black solid 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px 90px;
     border-radius: 10px;
     color: rgb(144, 0, 0);
-}
-
-.p {
-    padding: 30px 1px 20px 20px;
-    color: white;
 }
 
 .doing {
@@ -397,15 +384,8 @@ label {
 }
 
 .doing h1 {
-    text-align: center;
-}
-
-.doing h2 {
     border: black solid 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px 90px;
     border-radius: 10px;
     color: rgb(144, 0, 0);
 }
@@ -418,35 +398,39 @@ label {
 }
 
 .done h1 {
-    text-align: center;
-}
-
-.done h2 {
     border: black solid 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 10px 90px;
     border-radius: 10px;
     color: rgb(144, 0, 0);
 }
-button {
-    border: 1px solid white;
-    background-color: #000;
-    color: white;
-    border-radius: 10px;
-    padding: 5px 15px 5px 15px;
-    margin: 5px;
+.container a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
-
+.container a:hover {
+    font-size: 1.2em;
+}
+.p {
+    margin: 5px 0;
+}
+.p p {
+    background-color: white;
+    border: red solid;
+    padding: 10px;
+    border-radius: 5px;
+}
 .buttons {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+    background-color: black;
+    border: white;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 80px;
+    margin-top: 50px;
+    text-align: center;
 }
-
-button :hover {
-    padding: 5px;
+.buttons a {
+    color: white;
 }
 
 footer .container3 {
@@ -457,6 +441,9 @@ footer .container3 {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+    position: static;
+    bottom: 0;
+    left: 0;
 }
 
 .footer-wrapper {
@@ -493,34 +480,174 @@ footer .container3 {
 }
 
 .footer-info a:hover {
-  color: #444;
+    color: #444;
 }
-
 
 /* ===================================header==================== */
-header{
-  background-color: #ffa07a;
+header {
+    background-color: #ffa07a;
 }
-.container2{
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  align-items: center;
-  height: 100px;
+.container2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    height: 100px;
 }
-header nav{
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
 }
-header nav a{
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-  border-radius: 20%;
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 20%;
 }
-header nav a:hover{
-  color: white;
-  background-color: black;
+header nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    color: black;
+    padding: 10px;
+    border-radius: 20%;
+    border: none;
+    background-color: #ffa07a;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-btn {
+    background-color: #0b5ed7;
+}
+
+/* =============================login================ */
+.all {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #739ac8;
+}
+
+.form {
+    width: 15%;
+    background-color: #739ac8;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 250px;
+}
+
+.formgroup {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.formgroup input {
+    padding: 5px;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+}
+
+label {
+    color: white;
+}
+
+input {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+.formgroup_list {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+select {
+    padding: 6px 48px 6px 48px;
+    border-radius: 15px;
+}
+/* =============================index============================= */
+.container4 .background {
+    padding: 40px;
+    background-color: #739ac8;
+    max-width: auto;
+    height: 439px;
+}
+
+.content {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.content img {
+    max-width: 300px;
+    height: auto;
+}
+
+.info {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: gray;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.info h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.info p {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+/* =====================creater=== */
+.clearfix::after {
+    margin-bottom: 100px;
 }

@@ -651,3 +651,63 @@ select {
 .clearfix::after {
     margin-bottom: 100px;
 }
+/* =============================login================ */
+.all
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #739ac8;
+}
+
+.form
+{
+
+    width: 15%;
+    background-color: #739ac8;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 250px;
+
+   
+    
+}
+
+.formgroup
+{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    
+    
+
+
+}
+
+.formgroup input
+{
+    padding: 5px;
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+
+}
+
+label
+{
+    color: white;
+}
+
+input 
+{
+    text-align: center;
+
+}
+
+
+h1 {
+    color: rgb(255, 255, 255);
+
+}

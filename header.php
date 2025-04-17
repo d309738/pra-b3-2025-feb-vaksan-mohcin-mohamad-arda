@@ -4,6 +4,13 @@ require_once 'backend/config.php';
 <header>
     <link rel="stylesheet" href="css/main.css">
     <div class="container2">
+            <h1>Takenlijst</h1>
+            <nav>
+                <a href="">Home</a>
+                <a href="task.php">Takenlijst</a>
+                <a href="login.php">Log in</a>
+            </nav>
+        
         <h1>Takenlijst</h1>
         <nav>
             <a href="/index.php">Home</a>

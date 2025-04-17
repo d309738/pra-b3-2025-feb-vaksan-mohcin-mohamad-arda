@@ -2,29 +2,33 @@
 session_start();
 
 
-require_once "../../../backend/conn.php";
-
 
 $db = new PDO('mysql:host=localhost;dbname=takenlijst', 'root', '');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$email = $_POST['email'];
+$db ->setAttribute(PDO::ATTR_ERRMODE, PDO:: ERRMODE_EXCEPTION);
+
+
+$username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM users WHERE email = :email";
-$query = $db->prepare($sql);
-$query->execute(['email' => $email]);
+$sql = "SELECT * FROM users WHERE username = :username AND password = :password";
+$query = $db ->prepare($sql);
+$query -> execute([
+    'username' => $username,
+    'password' => $password
+]);
 
 $user = $query->fetch(PDO::FETCH_ASSOC);
 
-if ($user && password_verify($password, $user['password'])) 
+if($user) 
 {
-    $_SESSION['user'] = $user['email'];
-    header('Location: ../../../../index.php');
-    exit();
-} else 
+    $_SESSION['user'] = $user['username'];
+    header('location: ../../../task.php');
+} 
+else 
 {
-    header('Location: ../../../../login.php');
+    header('location: ../../../login.php');
     exit();
 }
+
 ?>
